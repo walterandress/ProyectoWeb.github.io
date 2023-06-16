@@ -101,6 +101,7 @@ p{
 .barraN ul li a {
   color: #e2e5e5;
   padding: 20px;
+  text-align: center;
 }
 
 .barraN ul li a:hover {
@@ -188,12 +189,12 @@ p{
   display: inline-block;
   color: #333;
   width: 33.3%;
-  padding: 50px;
+  padding: 30px 30px;
   text-align: center;
   background: #f0f8ff;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
   .caja {
     flex: 100%;
   }
@@ -223,16 +224,21 @@ p{
 
 .sobreNosotros img  {
   border-radius: 50%;
-  width: 25%;
+  width: 35%;
   height: auto;
+}
+
+.infoIzquierda h1 {
+  line-height: 1.0em;
 }
 
 .infoIzquierda {
   display: inline-block;
-  width: 75%;
+  width: 65%;
   height: auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  padding: 0px 20px;
 }
 
 @media(max-width: 1200px) {
@@ -252,13 +258,14 @@ p{
   display: flex;
   flex-flow: column;
   background: url(../imagenes/Fondo_testimonios.jpg) no-repeat center center/cover;
-  padding: 50px 100px ;
+  padding: 50px 30px ;
 }
 
 .fondo h2 {
   text-align: center;
   color: #f0f8ff;
   padding-bottom: 40px;
+  line-height: 1.0em;
 }
 
 .cliente {
@@ -290,7 +297,7 @@ p{
   display: inline-block;
   align-items: flex-end;
   text-align: center;
-  padding: 20px;
+  padding-top: 40px;
 }
 
 @media(max-width: 1200px) {

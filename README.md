@@ -6,7 +6,7 @@
 ## -Menciona las caracteristicas principales del hotel, como el numero de habitaciones, instalaciones y servicios ofrecidos.
 ## -Destaca los aspectos distintivos del hotel, como su estilo arquitectónico, diseño interior o tematica especial, si los hay.
 ## -Incluye imagenes atractivas que muestren las instalaciones del hotel, como habitaciones, areas comunes, piscina, gimnasio, restaurante, etc.
-## Experiencia del huesped: destaca la comodidad y el lujo que ofrece el hotel para brindar una experiencia unica a los huespedes.
+## -Experiencia del huesped: destaca la comodidad y el lujo que ofrece el hotel para brindar una experiencia unica a los huespedes.
 ## -Menciona servicios adicionales, como servicio de habitaciones las 24 horas, conserjeria, servicio de lavanderia, aparcamiento, etc.
 ## -Habla sobre la ubicación estrategica del hotel y su accesibilidad a lugares de interes sobre actividades.
 ## -Reservas y disponibilidad: como los huéspedes pueden hacer reservas a traves del sitio web del hotel.
