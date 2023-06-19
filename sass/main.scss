@@ -70,6 +70,7 @@ $desktop: 992px;
   }
   & .historia {
     display: inline-block;
+    background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
     width: 50%;
     height: auto;
     text-align: center;
@@ -104,6 +105,7 @@ $desktop: 992px;
 .sobreNosotros {
   display: flex;
   flex-flow: row wrap;
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
   padding: 30px;
   & img  {
     border-radius: 50%;
@@ -197,6 +199,7 @@ $desktop: 992px;
 .formularioContacto {
   display: flex;
   flex-flow: column wrap;
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
   padding: 50px 20px;
   & h1 {
     display: inline-block;
@@ -249,31 +252,42 @@ $desktop: 992px;
 
 //Comienzo de Actividades 
 /*Carouseles*/
-.carousel-inner {
+.fondoActividad {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  & .carousel-inner {
     max-height: 39rem;
   }
+}
 //Fin de Actividades 
 
 //Comienzo de Gastronomia 
 /*Imagenes y Descripciones*/
-.imagenConDescripcion_gastronomia {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 10px;
-  & img {
-    width: 45%;
-    border-radius: 50%;
+.fondoGastronomia {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  & .imagenConDescripcion_gastronomia {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      margin: 10px;
+      & img {
+        width: 45%;
+        border-radius: 50%;
+        &:hover {
+          transform: scale(1.05);
+      }
+    }
   }
-}
-
-.imagenConDescripcion_gastronomia_invertida {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  align-items: center;
-  & img {
-    width: 45%;
-    border-radius: 50%;
+  & .imagenConDescripcion_gastronomia_invertida {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    & img {
+      width: 45%;
+      border-radius: 50%;
+      &:hover {
+        transform: scale(1.05);
+    }
+    }
   }
 }
 
@@ -299,15 +313,21 @@ $desktop: 992px;
 //Comienzo de Gimnasio
 
 /*Imagenes y Descripciones*/
-.imagenConDescripcion_gimnasio {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 20px;
-  & img {
-    width: 45%;
-    margin: 10px;
-    border-radius: 10px;
+.fondoGimnasio {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  padding: 20px;
+  & .imagenConDescripcion_gimnasio {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    & img {
+      width: 45%;
+      margin: 10px;
+      border-radius: 10px;
+      &:hover {
+        transform: scale(1.05);
+    }
+    }
   }
 }
 

@@ -8,6 +8,9 @@
     padding: 30px 30px;
     text-align: center;
     background: $colorGrisOscuro;
+    &:hover {
+      transform: scale(1.03);
+    }
   }
   & .botonClaro1 {
     color: $colorGrisOscuro;
