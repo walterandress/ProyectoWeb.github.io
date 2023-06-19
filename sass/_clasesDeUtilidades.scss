@@ -1,0 +1,36 @@
+.colorTitulo {
+  color: $colorAmarillo;
+}
+
+.lider {
+  font-size: 20px;
+}
+
+.boton {
+  display: inline-block;
+  font-size: 18px;
+  color: $colorGrisOscuro;
+  background: $colorMarron;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: $colorAmarillo;
+  color: $colorMarronClaro;
+}
+
+.pricipal {
+  background: $colorMarron;
+  color: $colorGrisOscuro;
+}
+
+.botonClaro {
+  background: $colorGrisOscuro;
+  color: $colorMarron;
+}
+
+.titulo1 {
+  font-size: 40px;
+}

@@ -1,0 +1,36 @@
+header {
+  .barraNavegacion {
+    background-color: $colorMarron;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: auto;
+    & .logo {
+      a {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        color: $colorGris;
+      }
+    }
+    & .barraN {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        list-style: none;
+        li {
+          a {
+            color: $colorGris;
+            padding: 20px;
+            text-align: center;
+            &:hover {
+              background: $colorMarronClaro;
+              color: $colorAmarillo;
+            } 
+          }
+        }
+      }
+    }
+  }
+}

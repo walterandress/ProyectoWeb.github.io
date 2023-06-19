@@ -1,0 +1,18 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  background: $colorGris;
+}
+
+a {
+  color: $colorNegroClaro;
+  text-decoration: none; /*quita la linea de los enlaces*/
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p{
+  margin: 10px 0;
+}

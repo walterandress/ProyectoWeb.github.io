@@ -1,13 +1,15 @@
-/*Inicio*/
+/*Var colores*/
+/*Var pantallas*/
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Estilos principales*/
-html,body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*Body*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
   background: #e2e5e5;
 }
@@ -21,12 +23,11 @@ h1, h2, h3 {
   padding-bottom: 20px;
 }
 
-p{
+p {
   margin: 10px 0;
 }
 
-/*Clases de utilidades*/
-
+/*Clases de Utilidades*/
 .colorTitulo {
   color: #FFCF40;
 }
@@ -60,23 +61,25 @@ p{
   color: #342817;
 }
 
-.clr {
-  clear: both;
-}
-
 .titulo1 {
   font-size: 40px;
 }
 
 /*Padding*/
-.pad1 {padding: 10px 0px;}
-.pad2 {padding: 20px 0px;}
-.pad3 {padding: 30px 0px;}
+.pad1 {
+  padding: 10px 0px;
+}
 
+.pad2 {
+  padding: 20px 0px;
+}
 
-/*Barra de navegacion*/
+.pad3 {
+  padding: 30px 0px;
+}
 
-.barraNavegacion {
+/*Header*/
+header .barraNavegacion {
   background-color: #342817;
   display: flex;
   flex-flow: row nowrap;
@@ -84,34 +87,59 @@ p{
   padding: 10px 20px;
   width: auto;
 }
-
-.logo a {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+header .barraNavegacion .logo a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 40px;
   color: #e2e5e5;
 }
-
-.barraN ul {
+header .barraNavegacion .barraN ul {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
   list-style: none;
 }
-
-.barraN ul li a {
+header .barraNavegacion .barraN ul li a {
   color: #e2e5e5;
   padding: 20px;
   text-align: center;
 }
-
-.barraN ul li a:hover {
+header .barraNavegacion .barraN ul li a:hover {
   background: #483D2E;
   color: #FFCF40;
-} 
+} /*Parrafos descriptivos*/
+.descripcion {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}
 
-.barraN ul li a.actual {
-  background: #483D2E;
-  color: #FFCF40;
+/*Contenedor inferior*/
+.contenedorInferior {
+  display: flex;
+  flex-flow: row wrap;
+}
+.contenedorInferior .caja {
+  display: inline-block;
+  color: #333;
+  width: 33.3%;
+  padding: 30px 30px;
+  text-align: center;
+  background: #f0f8ff;
+}
+.contenedorInferior .botonClaro1 {
+  color: #f0f8ff;
+  background: #FFCF40;
+}
+
+/*Footer*/
+.footerP {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  color: #e2e5e5;
+  background: #342817;
+  padding: 20px;
 }
 
 /*Introduccion*/
@@ -120,86 +148,182 @@ p{
   justify-content: center;
   background: url(../imagenes/perfil.jpg) no-repeat center center/cover;
   height: 500px;
-
 }
-
-.introCont {
+.introduccion .introCont {
   display: inline-block;
   color: #f0f8ff;
   text-align: center;
   padding-top: 110px;
 }
-
-.introCont h1 {
+.introduccion .introCont h1 {
   font-size: 60px;
   line-height: 1.2em;
 }
-
-.introCont p {
+.introduccion .introCont .introCont p {
   padding-bottom: 20px;
   line-height: 1.7em;
 }
 
 /*Informacion Principal*/
-
 .informacion {
   display: flex;
   flex-flow: row wrap;
 }
-
 .informacion img {
   width: 50%;
   height: auto;
 }
-
-.historia {
+.informacion .historia {
   display: inline-block;
   width: 50%;
   height: auto;
   text-align: center;
   padding: 30px 30px;
- 
+}
+.informacion .historia p {
+  padding-bottom: 30px;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 992px) {
   .informacion img {
     flex: 100%;
   }
 }
-
-@media(max-width: 900px) {
+@media (max-width: 992px) {
   .historia {
     flex: 100%;
   }
 }
-
-.historia p{
-  padding-bottom: 30px;
-}
-
-/*Contenedor Inferior*/
-
-.contenedorInferior {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-
-.caja {
-  display: inline-block;
-  color: #333;
-  width: 33.3%;
-  padding: 30px 30px;
-  text-align: center;
-  background: #f0f8ff;
-}
-
-@media(max-width: 600px) {
+@media (max-width: 730px) {
   .caja {
     flex: 100%;
   }
 }
+/*Sobre Nosotros*/
+.sobreNosotros {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px;
+}
+.sobreNosotros img {
+  border-radius: 50%;
+  width: 35%;
+  height: auto;
+}
+.sobreNosotros .infoIzquierda {
+  display: inline-block;
+  width: 65%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+.sobreNosotros .infoIzquierda h1 {
+  line-height: 1em;
+}
 
+@media (max-width: 992px) {
+  .infoIzquierda {
+    flex: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .sobreNosotros img {
+    flex: 100%;
+  }
+}
+/*Fondo y Testimonios*/
+.fondo {
+  display: flex;
+  flex-flow: column;
+  background: url(../imagenes/Fondo_testimonios.jpg) no-repeat center center/cover;
+  padding: 50px 30px;
+}
+.fondo h2 {
+  text-align: center;
+  color: #f0f8ff;
+  padding-bottom: 40px;
+  line-height: 1em;
+}
+.fondo .cliente {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  opacity: 0.9;
+  width: auto;
+  color: #342817;
+  background: #FFCF40;
+}
+.fondo .cliente img {
+  justify-content: center;
+  width: 13%;
+  margin-right: 20px;
+  border-radius: 50%;
+  height: auto;
+}
+.fondo .cliente p {
+  width: 60%;
+  display: inline-block;
+  align-items: flex-end;
+  text-align: center;
+  padding-top: 20px;
+}
+.fondo .cliente p span {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 992px) {
+  .cliente img {
+    flex: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .cliente p {
+    flex: 100%;
+  }
+}
+/*Formulario de Contacto*/
+.formularioContacto {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 50px 20px;
+}
+.formularioContacto h1 {
+  display: inline-block;
+  line-height: 1.7em;
+}
+.formularioContacto .campoFormulario {
+  margin-bottom: 20px;
+}
+.formularioContacto .campoFormulario label {
+  display: block;
+  margin-bottom: 5px;
+}
+.formularioContacto .campoFormulario input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.formularioContacto .campoFormulario input:focus {
+  outline: none;
+  border-color: #FFCF40;
+}
+.formularioContacto .campoFormulario textarea {
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.formularioContacto .campoFormulario textarea:focus {
+  outline: none;
+  border-color: #FFCF40;
+}
+
+/*Contenedor inferior de Contacto*/
 .caja2 {
   color: #f0f8ff;
   float: left;
@@ -209,246 +333,68 @@ p{
   background: #333;
 }
 
-.botonClaro1 {
-  color: #342817;
-  background: #FFCF40;
-}
-
-/*Sobre Nosotros*/
-
-.sobreNosotros {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px;
-}
-
-.sobreNosotros img  {
-  border-radius: 50%;
-  width: 35%;
-  height: auto;
-}
-
-.infoIzquierda h1 {
-  line-height: 1.0em;
-}
-
-.infoIzquierda {
-  display: inline-block;
-  width: 65%;
-  height: auto;
-  text-align: center;
-  margin-top: 20px;
-  padding: 0px 20px;
-}
-
-@media(max-width: 1200px) {
-  .infoIzquierda {
-    flex: 100%;
-  }
-}
-
-@media(max-width: 1200px) {
-  .sobreNosotros img {
-    flex: 100%;
-  }
-}
-
-/*Testimonios*/
-.fondo {
-  display: flex;
-  flex-flow: column;
-  background: url(../imagenes/Fondo_testimonios.jpg) no-repeat center center/cover;
-  padding: 50px 30px ;
-}
-
-.fondo h2 {
-  text-align: center;
-  color: #f0f8ff;
-  padding-bottom: 40px;
-  line-height: 1.0em;
-}
-
-.cliente {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content:space-evenly;
-  padding: 10px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  opacity: 0.9;
-  width: auto;
-}
-
-.cliente span {
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.cliente img {
-  justify-content: center;
-  width: 13%;
-  margin-right: 20px;
-  border-radius: 50%;
-  height: auto;
-}
-
-
-.cliente p {
-  width: 60%;
-  display: inline-block;
-  align-items: flex-end;
-  text-align: center;
-  padding-top: 40px;
-}
-
-@media(max-width: 1200px) {
-  .cliente img {
-    flex: 100%;
-  }
-}
-
-@media(max-width: 1200px) {
-  .cliente p {
-    flex: 100%;
-  }
-}
-
-
-/*Formulario Contacto*/
-
-.formularioContacto {
-  display: flex;
-  flex-flow: column wrap;
-  padding: 50px 20px;
-}
-
-.formularioContacto h1 {
-  display: inline-block;
-  line-height: 1.7em;
-}
- 
-.formularioContacto .campoFormulario {
-  margin-bottom: 20px;
-}
-
-.formularioContacto label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.formularioContacto input,
-.formularioContacto textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-.formularioContacto textarea {
-  height: 200px;
-}
-
-.formularioContacto input:focus,
-.formularioContacto textarea:focus {
-  outline: none;
-  border-color: #FFCF40;
-}
-
-@media(max-width: 800px) {
+@media (max-width: 730px) {
   .caja2 {
     flex: 100%;
   }
 }
-
-/*Actividad*/
-
+/*Carouseles*/
 .carousel-inner {
   max-height: 39rem;
 }
 
-/*Gastronomia*/
+/*Imagenes y Descripciones*/
+.imagenConDescripcion_gastronomia {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 10px;
+}
+.imagenConDescripcion_gastronomia img {
+  width: 45%;
+  border-radius: 50%;
+}
 
-.imagenConDescripcion1 {
+.imagenConDescripcion_gastronomia_invertida {
   display: flex;
   flex-flow: row-reverse wrap;
   align-items: center;
 }
-
-.imagenConDescripcion1 img {
+.imagenConDescripcion_gastronomia_invertida img {
   width: 45%;
-}
-
-@media(max-width: 1100px) {
-  .imagenConDescripcion1 img {
-    flex: 100%;
-  }
-}
-
-.imagenPrincipal4 {
-  margin-top: 5px;
   border-radius: 50%;
 }
 
-.imagenPrincipal5 {
-  border-radius: 50%;
-}
-
-.imagenPrincipal6 {
-  margin-bottom: 5px;
-  border-radius: 50%;
-}
-
-/*Sala de Ejercicios*/
-
-.imagenConDescripcion {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-.descripcion {
-  display: inline-block;
-  text-align:center;
-  padding: 40px;
-  width: 50%;
-}
-
-.imagenConDescripcion img {
-  width: 45%;
-}
-
-@media(max-width: 1100px) {
-  .imagenConDescripcion img {
-    flex: 100%;
-  }
-}
-
-@media(max-width: 1100px) {
+@media (max-width: 992px) {
   .descripcion {
     flex: 100%;
   }
 }
-
-.imagenPrincipal7 {
-  margin: 10px;
-  border-radius: 10px;
+@media (max-width: 992px) {
+  .imagenConDescripcion_gastronomia img {
+    flex: 100%;
+  }
 }
-
-.imagenPrincipal8 {
-  margin: 10px;
-  border-radius: 10px;
+@media (max-width: 992px) {
+  .imagenConDescripcion_gastronomia_invertida img {
+    flex: 100%;
+  }
 }
-
-.imagenPrincipal9 {
-  margin: 10px;
-  border-radius: 10px;
-}
-
-/*Footer*/
-.footerP {
+/*Imagenes y Descripciones*/
+.imagenConDescripcion_gimnasio {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  color:#f0f8ff;
-  background: #342817;
-  padding: 20px;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 20px;
+}
+.imagenConDescripcion_gimnasio img {
+  width: 45%;
+  margin: 10px;
+  border-radius: 10px;
 }
 
+@media (max-width: 992px) {
+  .imagenConDescripcion_gimnasio img {
+    flex: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

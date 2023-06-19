@@ -1,0 +1,16 @@
+.contenedorInferior {
+  display: flex;
+  flex-flow: row wrap;
+  & .caja {
+    display: inline-block;
+    color: $colorNegroClaro;
+    width: 33.3%;
+    padding: 30px 30px;
+    text-align: center;
+    background: $colorGrisOscuro;
+  }
+  & .botonClaro1 {
+    color: $colorGrisOscuro;
+    background: $colorAmarillo;
+  }
+}
