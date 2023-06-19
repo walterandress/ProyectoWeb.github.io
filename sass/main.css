@@ -216,6 +216,9 @@ header .barraNavegacion .barraN ul li a:hover {
   width: 35%;
   height: auto;
 }
+.sobreNosotros img:hover {
+  transform: scale(1.05);
+}
 .sobreNosotros .infoIzquierda {
   display: inline-block;
   width: 65%;
@@ -262,6 +265,9 @@ header .barraNavegacion .barraN ul li a:hover {
   width: auto;
   color: #342817;
   background: #FFCF40;
+}
+.fondo .cliente:hover {
+  transform: scale(1.03);
 }
 .fondo .cliente img {
   justify-content: center;

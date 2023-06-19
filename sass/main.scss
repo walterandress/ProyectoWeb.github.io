@@ -111,6 +111,9 @@ $desktop: 992px;
     border-radius: 50%;
     width: 35%;
     height: auto;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   & .infoIzquierda {
     display: inline-block;
@@ -160,6 +163,9 @@ $desktop: 992px;
     width: auto;
     color: $colorMarron;
     background: $colorAmarillo;
+    &:hover {
+      transform: scale(1.03);
+    }
     & img {
       justify-content: center;
       width: 13%;
