@@ -1,0 +1,99 @@
+//Comienzo Sobre nosotros
+/*Sobre Nosotros*/
+.sobreNosotros {
+  display: flex;
+  flex-flow: row wrap;
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  padding: 30px;
+  & img  {
+    border-radius: 50%;
+    width: 35%;
+    height: auto;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  & .infoIzquierda {
+    display: inline-block;
+    width: 65%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 20px;
+    & h1 {
+      line-height: 1.0em;
+    }
+  }
+}
+
+@media(max-width: $desktop) {
+  .infoIzquierda {
+    flex: 100%;
+  }
+}
+
+@media(max-width: $desktop) {
+  .sobreNosotros img {
+    flex: 100%;
+  }
+}
+
+/*Fondo y Testimonios*/
+.fondo {
+  display: flex;
+  flex-flow: column;
+  background: url(../imagenes/Fondo_testimonios.jpg) no-repeat center center/cover;
+  padding: 50px 30px ;
+  & h2 {
+    text-align: center;
+    color: $colorGrisOscuro;
+    padding-bottom: 40px;
+    line-height: 1.0em;
+  }
+  & .cliente {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.9;
+    width: auto;
+    color: $colorMarron;
+    background: $colorAmarillo;
+    &:hover {
+      transform: scale(1.03);
+    }
+    & img {
+      justify-content: center;
+      width: 13%;
+      margin-right: 20px;
+      border-radius: 50%;
+      height: auto;
+    }
+    & p {
+      width: 60%;
+      display: inline-block;
+      align-items: flex-end;
+      text-align: center;
+      padding-top: 20px;
+      & span {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+}
+
+@media(max-width: $desktop) {
+  .cliente img {
+    flex: 100%;
+  }
+}
+
+@media(max-width: $desktop) {
+  .cliente p {
+    flex: 100%;
+  }
+}
+//Fin Sobre nosotros

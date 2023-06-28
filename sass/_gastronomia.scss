@@ -1,0 +1,61 @@
+//Comienzo de Gastronomia 
+/*Imagenes y Descripciones*/
+.fondoGastronomia {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  & .imagenConDescripcion_gastronomia {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      margin: 10px;
+      & .descripcion {
+        display: inline-block;
+        text-align:center;
+        padding: 10px;
+        width: 50%;
+      }
+      & img {
+        width: 45%;
+        border-radius: 50%;
+        &:hover {
+          transform: scale(1.05);
+      }
+    }
+  }
+  & .imagenConDescripcion_gastronomia_invertida {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    & .descripcion {
+      display: inline-block;
+      text-align:center;
+      padding: 10px;
+      width: 50%;
+    }
+    & img {
+      width: 45%;
+      border-radius: 50%;
+      &:hover {
+        transform: scale(1.05);
+    }
+    }
+  }
+}
+
+@media(max-width: $desktop) {
+  .descripcion {
+    flex: 100%;
+  }
+}
+
+@media(max-width: $desktop) {
+  .imagenConDescripcion_gastronomia img {
+    flex: 100%;
+  }
+}
+
+@media(max-width: $desktop) {
+  .imagenConDescripcion_gastronomia_invertida img {
+    flex: 100%;
+  }
+}
+//Fin de Gastronomia

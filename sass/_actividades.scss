@@ -1,0 +1,15 @@
+//Comienzo de Actividades 
+/*Carouseles*/
+.fondoActividad {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  & .carousel-inner {
+    max-height: 39rem;
+  }
+  & .descripcion {
+    display: inline-block;
+    text-align:center;
+    padding: 10px;
+    width: 50%;
+  }
+}
+//Fin de Actividades 

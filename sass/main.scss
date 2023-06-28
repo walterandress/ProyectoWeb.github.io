@@ -1,16 +1,10 @@
-/*Var colores*/
-$colorMarron: #342817;
-$colorMarronClaro: #483D2E;
-$colorAmarillo: #FFCF40;
-$colorGris: #e2e5e5;
-$colorGrisOscuro: #f0f8ff;
-$colorNegroClaro: #333;
-$colorBorder: #ddd;
+/*Variables colores*/
+@import 'variablesColores';
 
-/*Var pantallas*/
-$mobile: 576px;
-$tablet: 730px;
-$desktop: 992px;
+/*Variables pantallas*/
+@import 'variablesPantallas';
+
+
 
 /*Reset*/
 @import 'reset';
@@ -27,320 +21,31 @@ $desktop: 992px;
 /*Header*/
 @import 'header';
 
-/*Parrafos descriptivos*/
-@import 'descripciones';
-
 /*Contenedor inferior*/
 @import 'contenedorInferior';
 
 /*Footer*/
 @import 'footer';
 
-//Comienzo Index
-/*Introduccion*/
-.introduccion {
-  display: flex;
-  justify-content: center;
-  background: url(../imagenes/perfil.jpg) no-repeat center center/cover;
-  height: 500px;
-  & .introCont {
-    display: inline-block;
-    color: $colorGrisOscuro;
-    text-align: center;
-    padding-top: 110px;
-    & h1 {
-      font-size: 60px;
-      line-height: 1.2em;
-    }
-    & .introCont p {
-      padding-bottom: 20px;
-      line-height: 1.7em;
-    }
-  }
-}
 
 
-/*Informacion Principal*/
-.informacion {
-  display: flex;
-  flex-flow: row wrap;
-  & img {
-    width: 50%;
-    height: auto;
-  }
-  & .historia {
-    display: inline-block;
-    background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-    width: 50%;
-    height: auto;
-    text-align: center;
-    padding: 30px 30px;
-    & p{
-      padding-bottom: 30px;
-    }
-  }
-}
+/*Estilos de Index*/
+@import 'index';
 
-@media (max-width: $desktop) {
-  .informacion img {
-    flex: 100%;
-  }
-}
+/*Estilos de "Sobre Nosotros"*/
+@import 'sobreNosotros';
 
-@media (max-width: $desktop) {
-  .historia {
-    flex: 100%;
-  }
-}
+/*Estilos de Formulario de Contacto*/
+@import 'formularioContacto';
 
-@media(max-width: $tablet) {
-  .caja {
-    flex: 100%;
-  }
-}
-//Fin de Index 
+/*Estilos de Actividades*/
+@import 'actividades';
 
-//Comienzo Sobre nosotros
-/*Sobre Nosotros*/
-.sobreNosotros {
-  display: flex;
-  flex-flow: row wrap;
-  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-  padding: 30px;
-  & img  {
-    border-radius: 50%;
-    width: 35%;
-    height: auto;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-  & .infoIzquierda {
-    display: inline-block;
-    width: 65%;
-    height: auto;
-    text-align: center;
-    margin-top: 20px;
-    padding: 0px 20px;
-    & h1 {
-      line-height: 1.0em;
-    }
-  }
-}
+/*Estilos de Gastronomia*/
+@import 'gastronomia';
 
-@media(max-width: $desktop) {
-  .infoIzquierda {
-    flex: 100%;
-  }
-}
+/*Estilos de Gimnasio*/
+@import 'gimnasio';
 
-@media(max-width: $desktop) {
-  .sobreNosotros img {
-    flex: 100%;
-  }
-}
 
-/*Fondo y Testimonios*/
-.fondo {
-  display: flex;
-  flex-flow: column;
-  background: url(../imagenes/Fondo_testimonios.jpg) no-repeat center center/cover;
-  padding: 50px 30px ;
-  & h2 {
-    text-align: center;
-    color: $colorGrisOscuro;
-    padding-bottom: 40px;
-    line-height: 1.0em;
-  }
-  & .cliente {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-evenly;
-    padding: 10px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    opacity: 0.9;
-    width: auto;
-    color: $colorMarron;
-    background: $colorAmarillo;
-    &:hover {
-      transform: scale(1.03);
-    }
-    & img {
-      justify-content: center;
-      width: 13%;
-      margin-right: 20px;
-      border-radius: 50%;
-      height: auto;
-    }
-    & p {
-      width: 60%;
-      display: inline-block;
-      align-items: flex-end;
-      text-align: center;
-      padding-top: 20px;
-      & span {
-        font-size: 30px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }
-    }
-  }
-}
-
-@media(max-width: $desktop) {
-  .cliente img {
-    flex: 100%;
-  }
-}
-
-@media(max-width: $desktop) {
-  .cliente p {
-    flex: 100%;
-  }
-}
-//Fin Sobre nosotros
-
-//Comienzo de Formulario de contacto
-/*Formulario de Contacto*/
-.formularioContacto {
-  display: flex;
-  flex-flow: column wrap;
-  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-  padding: 50px 20px;
-  & h1 {
-    display: inline-block;
-    line-height: 1.7em;
-  }
-  & .campoFormulario {
-    margin-bottom: 20px;
-    & label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    & input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid $colorBorder;
-      &:focus {
-        outline: none;
-        border-color: $colorAmarillo;
-      }
-    }
-    & textarea {
-      height: 200px;
-      width: 100%;
-      padding: 10px;
-      border: 1px solid $colorBorder;
-      &:focus {
-        outline: none;
-        border-color: $colorAmarillo;
-      }
-    }
-  }
-}
-
-/*Contenedor inferior de Contacto*/
-.caja2 {
-  color: $colorGrisOscuro;
-  float: left;
-  width: 33.3%;
-  padding: 50px;
-  text-align: center;
-  background: $colorNegroClaro;
-}
-
-@media(max-width: $tablet) {
-  .caja2 {
-    flex: 100%;
-  }
-}
-//Fin de Formulario de contacto
-
-//Comienzo de Actividades 
-/*Carouseles*/
-.fondoActividad {
-  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-  & .carousel-inner {
-    max-height: 39rem;
-  }
-}
-//Fin de Actividades 
-
-//Comienzo de Gastronomia 
-/*Imagenes y Descripciones*/
-.fondoGastronomia {
-  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-  & .imagenConDescripcion_gastronomia {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      margin: 10px;
-      & img {
-        width: 45%;
-        border-radius: 50%;
-        &:hover {
-          transform: scale(1.05);
-      }
-    }
-  }
-  & .imagenConDescripcion_gastronomia_invertida {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    align-items: center;
-    & img {
-      width: 45%;
-      border-radius: 50%;
-      &:hover {
-        transform: scale(1.05);
-    }
-    }
-  }
-}
-
-@media(max-width: $desktop) {
-  .descripcion {
-    flex: 100%;
-  }
-}
-
-@media(max-width: $desktop) {
-  .imagenConDescripcion_gastronomia img {
-    flex: 100%;
-  }
-}
-
-@media(max-width: $desktop) {
-  .imagenConDescripcion_gastronomia_invertida img {
-    flex: 100%;
-  }
-}
-//Fin de Gastronomia
-
-//Comienzo de Gimnasio
-
-/*Imagenes y Descripciones*/
-.fondoGimnasio {
-  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
-  padding: 20px;
-  & .imagenConDescripcion_gimnasio {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    & img {
-      width: 45%;
-      margin: 10px;
-      border-radius: 10px;
-      &:hover {
-        transform: scale(1.05);
-    }
-    }
-  }
-}
-
-@media(max-width: $desktop) {
-  .imagenConDescripcion_gimnasio img {
-    flex: 100%;
-  }
-}
-//Fin de Gimnasio
 

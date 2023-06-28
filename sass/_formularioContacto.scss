@@ -1,0 +1,55 @@
+//Comienzo de Formulario de contacto
+/*Formulario de Contacto*/
+.formularioContacto {
+  display: flex;
+  flex-flow: column wrap;
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  padding: 50px 20px;
+  & h1 {
+    display: inline-block;
+    line-height: 1.7em;
+  }
+  & .campoFormulario {
+    margin-bottom: 20px;
+    & label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    & input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $colorBorder;
+      &:focus {
+        outline: none;
+        border-color: $colorAmarillo;
+      }
+    }
+    & textarea {
+      height: 200px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $colorBorder;
+      &:focus {
+        outline: none;
+        border-color: $colorAmarillo;
+      }
+    }
+  }
+}
+
+/*Contenedor inferior de Contacto*/
+.caja2 {
+  color: $colorGrisOscuro;
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+  background: $colorNegroClaro;
+}
+
+@media(max-width: $tablet) {
+  .caja2 {
+    flex: 100%;
+  }
+}
+//Fin de Formulario de contacto

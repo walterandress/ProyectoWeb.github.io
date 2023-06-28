@@ -1,5 +1,5 @@
-/*Var colores*/
-/*Var pantallas*/
+/*Variables colores*/
+/*Variables pantallas*/
 /*Reset*/
 * {
   margin: 0;
@@ -107,12 +107,6 @@ header .barraNavegacion .barraN ul li a {
 header .barraNavegacion .barraN ul li a:hover {
   background: #483D2E;
   color: #FFCF40;
-} /*Parrafos descriptivos*/
-.descripcion {
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
-  width: 50%;
 }
 
 /*Contenedor inferior*/
@@ -146,6 +140,7 @@ header .barraNavegacion .barraN ul li a:hover {
   padding: 20px;
 }
 
+/*Estilos de Index*/
 /*Introduccion*/
 .introduccion {
   display: flex;
@@ -204,6 +199,7 @@ header .barraNavegacion .barraN ul li a:hover {
     flex: 100%;
   }
 }
+/*Estilos de "Sobre Nosotros"*/
 /*Sobre Nosotros*/
 .sobreNosotros {
   display: flex;
@@ -298,6 +294,7 @@ header .barraNavegacion .barraN ul li a:hover {
     flex: 100%;
   }
 }
+/*Estilos de Formulario de Contacto*/
 /*Formulario de Contacto*/
 .formularioContacto {
   display: flex;
@@ -351,6 +348,7 @@ header .barraNavegacion .barraN ul li a:hover {
     flex: 100%;
   }
 }
+/*Estilos de Actividades*/
 /*Carouseles*/
 .fondoActividad {
   background: linear-gradient(to top, #d2cec5, #dbd7d0, #e4e1dc, #edebe7);
@@ -358,7 +356,14 @@ header .barraNavegacion .barraN ul li a:hover {
 .fondoActividad .carousel-inner {
   max-height: 39rem;
 }
+.fondoActividad .descripcion {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}
 
+/*Estilos de Gastronomia*/
 /*Imagenes y Descripciones*/
 .fondoGastronomia {
   background: linear-gradient(to top, #d2cec5, #dbd7d0, #e4e1dc, #edebe7);
@@ -368,6 +373,12 @@ header .barraNavegacion .barraN ul li a:hover {
   flex-flow: row wrap;
   align-items: center;
   margin: 10px;
+}
+.fondoGastronomia .imagenConDescripcion_gastronomia .descripcion {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
 }
 .fondoGastronomia .imagenConDescripcion_gastronomia img {
   width: 45%;
@@ -380,6 +391,12 @@ header .barraNavegacion .barraN ul li a:hover {
   display: flex;
   flex-flow: row-reverse wrap;
   align-items: center;
+}
+.fondoGastronomia .imagenConDescripcion_gastronomia_invertida .descripcion {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
 }
 .fondoGastronomia .imagenConDescripcion_gastronomia_invertida img {
   width: 45%;
@@ -404,6 +421,7 @@ header .barraNavegacion .barraN ul li a:hover {
     flex: 100%;
   }
 }
+/*Estilos de Gimnasio*/
 /*Imagenes y Descripciones*/
 .fondoGimnasio {
   background: linear-gradient(to top, #d2cec5, #dbd7d0, #e4e1dc, #edebe7);
@@ -413,6 +431,12 @@ header .barraNavegacion .barraN ul li a:hover {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+.fondoGimnasio .imagenConDescripcion_gimnasio .descripcion {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
 }
 .fondoGimnasio .imagenConDescripcion_gimnasio img {
   width: 45%;

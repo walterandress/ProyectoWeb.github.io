@@ -1,0 +1,33 @@
+//Comienzo de Gimnasio
+
+/*Imagenes y Descripciones*/
+.fondoGimnasio {
+  background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
+  padding: 20px;
+  & .imagenConDescripcion_gimnasio {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    & .descripcion {
+      display: inline-block;
+      text-align:center;
+      padding: 10px;
+      width: 50%;
+    }
+    & img {
+      width: 45%;
+      margin: 10px;
+      border-radius: 10px;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media(max-width: $desktop) {
+  .imagenConDescripcion_gimnasio img {
+    flex: 100%;
+  }
+}
+//Fin de Gimnasio
