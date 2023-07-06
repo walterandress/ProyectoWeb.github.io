@@ -31,28 +31,9 @@
       </div> 
     </header>
     
-    <main>
-      <div class="formularioContacto animate__animated animate__backInLeft">
-        <h1 class="titulo1"><span class="colorTitulo">Contactenos</span> con nuestro formulario</h1>
-        <p>Por favor complete el formulario a continuacion para contactarnos</p>
-        <form action="form.php" method="POST">
-          <div class="campoFormulario">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name">
-          </div>
-          <div class="campoFormulario">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="campoFormulario">
-            <label for="message">Mensaje</label>
-            <textarea type="text" name="message" id="message"></textarea>
-          </div>
-          <button type="submit"><a href="./mensajeContacto.html" class="boton">Enviar</a></button>
-        </form>
-      </div>
-      
     
+    <main>
+      <h1 class="mensajeExito animate__animated animate__backInLeft"><span class="colorTitulo">Gracias</span> su mensaje fue enviado con exito!</h1>
       <div class="contenedorInferior animate__animated animate__backInRight">
         <div class="caja2">
           <i class="fa-solid fa-hotel fa-3x"></i>
@@ -76,7 +57,11 @@
       <p>LQH &copy; 2023, Reserva Todos Los Derechos</p>
     </footer>
 
-    
+    <script>
+      setTimeout(function(){
+        window.location.replace("../index.html");
+      },5000);
+    </script>
 
   </body>
 

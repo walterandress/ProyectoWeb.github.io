@@ -1,6 +1,8 @@
 .contenedorInferior {
   display: flex;
   flex-flow: row wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
   & .caja {
     display: inline-block;
     color: $colorNegroClaro;

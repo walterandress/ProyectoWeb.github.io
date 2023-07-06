@@ -1,5 +1,42 @@
 //Comienzo de Actividades 
 /*Carouseles*/
+.barraNavegacionActividad {
+  background-color: $colorMarron;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  width: auto;
+  & .logo {
+    a {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      color: $colorAmarillo;
+    }
+  }
+  & .barraN {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+      list-style: none;
+      li {
+        a {
+          color: $colorGris;
+          padding: 20px;
+          text-align: center;
+          &:hover {
+            background: $colorMarronClaro;
+            color: $colorAmarillo;
+          } 
+        }
+      }
+    }
+  }
+}
+
 .fondoActividad {
   background: linear-gradient(to top, #d2cec5,#dbd7d0, #e4e1dc, #edebe7);
   & .carousel-inner {
