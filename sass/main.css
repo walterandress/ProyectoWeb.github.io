@@ -498,8 +498,10 @@ header .barraNavegacion .barraN ul li a:hover {
 }
 /*Estilos de MensajeContacto*/
 .mensajeExito {
+  display: block;
   text-align: center;
-  padding-top: 10%;
+  line-height: 1.7em;
+  padding: 80px 10px;
   background: #16c55e;
-  height: 300px;
+  height: 250px;
 }/*# sourceMappingURL=main.css.map */
